@@ -9,7 +9,7 @@
 ## Installation Instructions:
 1. Clone the repository
 ```
-git clone https://github.com/reshinto/vetner.git
+git clone https://github.com/Sharxn13/XcurrencyX.git
 ```
 2. Install all dependencies
 ```
