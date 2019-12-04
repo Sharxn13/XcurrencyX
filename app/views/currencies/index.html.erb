@@ -1,0 +1,48 @@
+<html>
+<body>
+    <div class="navi">
+  <nav class="navbar navbar-default navbar-expand-lg">
+    <div class="navbar-header d-flex col">
+    <a class="navbar-brand" href="/">X<b>currency</b>X</a>
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+    <span class="navbar-toggler-icon"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    </div>
+<!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+    <ul class="nav navbar-nav">
+    <li class="nav-item"><a href="/articles" class="nav-link" style="color:white">News</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right ml-auto">
+    <% if user_signed_in? %>
+    <li class="nav-item">
+    <%= link_to 'Log Out', destroy_user_session_url, method: :delete, class:"btn btn-primary get-started-btn mt-1 mb-1" %>
+    </li>
+    <% else%>
+    <li class="nav-item">
+    <%= link_to 'Log In', new_user_session_url,class:"btn btn-primary get-started-btn mt-1 mb-1" %>
+    </li>
+    <% end %>
+    </ul>
+    </div>
+  </nav>
+</div>
+        <div class="table" style="color:white; text-align: center;">
+            <br />
+            <img class="images" src="./logo.jpg" alt="logo" />
+        <p><h1><strong>Welcome to XcurrencyX!<strong></h1><p>
+            <br />
+            <p><h4>In this site, you can convert currencies
+                <br />and also post the latest news
+                <br />or read it on the news page.</h4></p>
+        </div>
+        <br />
+        <br />
+<!-- Getting JSX index -->
+      <%= javascript_pack_tag 'index' %>
+    </div>
+</body>
+</html>
