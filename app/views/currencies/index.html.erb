@@ -1,9 +1,8 @@
 <html>
 <body>
-    <div class="navi">
-  <nav class="navbar navbar-default navbar-expand-lg">
+  <nav class="navbar navbar-default navbar-expand-lg" style="background-color: black;">
     <div class="navbar-header d-flex col">
-    <a class="navbar-brand" href="/">X<b>currency</b>X</a>
+    <a class="navbar-brand" href="/" style=" color:white;">X<b>currency</b>X</a>
     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
     <span class="navbar-toggler-icon"></span>
     <span class="icon-bar"></span>
@@ -22,15 +21,14 @@
     <%= link_to 'Log Out', destroy_user_session_url, method: :delete, class:"btn btn-primary get-started-btn mt-1 mb-1" %>
     </li>
     <% else%>
-    <li class="nav-item">
-    <%= link_to 'Log In', new_user_session_url,class:"btn btn-primary get-started-btn mt-1 mb-1" %>
+    <li class="nav-item" style="color: white;">
+    <%= link_to 'Log In', new_user_session_url,class:"btn btn-primary get-started-btn mt-1 mb-1"%>
     </li>
     <% end %>
     </ul>
     </div>
   </nav>
-</div>
-        <div class="table" style="color:white; text-align: center;">
+        <div style="color:white; text-align: center;">
             <br />
             <img class="images" src="./logo.jpg" alt="logo" />
         <p><h1><strong>Welcome to XcurrencyX!<strong></h1><p>
@@ -41,6 +39,32 @@
         </div>
         <br />
         <br />
+    <div class="table">
+      <table align="center" style="color: white; background-color: black;" border="2" class="w3-table-all">
+        <thead>
+          <tr>
+            <th height="50"><h3><strong>NEWS</strong></h3></th>
+            <th height="50"><h3><strong>LINKS</strong></h3></th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="500rem" height="50rem">You can check out the latest currency news at Forex News</td>
+            <td width="90rem" height="50rem"><a href="https://www.fxstreet.com/news">fxstreet.com</a></td>
+          </tr>
+          <tr>
+            <td width="500rem" height="50rem">Click here to check the latest currency market news</td>
+            <td width="90rem" height="50rem"><a href="https://www.marketwatch.com/investing/currencies">MarketWatch.com</a>
+          </tr>
+          <tr>
+            <td width="500rem" height="50rem">Check out daily exchange rate forecasts & currency news.</td>
+            <td width="90rem" height="50rem"><a href="https://www.currencynews.co.uk/">currencynews.co.uk</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <br />
 <!-- Getting JSX index -->
       <%= javascript_pack_tag 'index' %>
     </div>
